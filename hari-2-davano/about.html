@@ -12,357 +12,49 @@
     />
   </head>
   <body>
-    <main
-      style="height: 100vh"
-      class="d-flex justify-content-between flex-column"
-    >
-      <div>
-        <!-- header -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container">
-            <a class="navbar-brand" href="#">MODUL WEB 2</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                    >Header</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="about.html"> <b>About</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="video.html">Video</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="pdf.html">PDF</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="footer.html">Footer</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="https://l1nk.dev/3LPkm"
-                    >Asset</a
-                  >
-                </li>
-              </ul>
-
-              <div class="justify-content-end">
-                <a
-                  class="nav-link active"
-                  href="../index.html"
-                  style="color: rgb(255, 99, 99)"
-                  >Kembali</a
-                >
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        <div class="container mt-5">
-          <h4 class="mb-4">Membuat About</h4>
-          <img
-            src="./img/about.png"
-            class="img-fluid"
-            alt="Gallery Image"
-            style="max-width: 100%"
-          />
-
-          <div class="mt-4">
-            <h5>
-              1. Setelah membuat about kita lanjut membuat biodata pertama-tama
-              kita buat container buat judul dan isi dari biodatanya
-            </h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-1"
-                rows="12"
-                class="form-control"
-                readonly
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">MODUL WEB 2</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Header</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html"> <b>About</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pdf.html">PDF</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="footer.html">Footer</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="https://l1nk.dev/3LPkm"
+                >Asset</a
               >
-            <div class="tentang">
-              <div class="container">
-               <!-- container -->
-              </div>
-            </div>
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('1')">
-                Salin Text
-              </button>
-            </div>
-          </div>
-          <div class="mt-4">
-            <h5>ini style css dari container di atas</h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-2"
-                rows="12"
-                class="form-control"
-                readonly
-              >
-            .tentang{
-              background-color: #0f172a;
-              width: 100%;
-              height: auto;
-              padding-bottom: 2rem;
-            }
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('2')">
-                Salin Text
-              </button>
-            </div>
-          </div>
-          <div class="mt-4">
-            <h5>
-              2. langkah ke dua kita buat 1 baris 1 kolom untuk membungkus Judul
-              dan deskripsinya
-            </h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-3"
-                rows="12"
-                class="form-control"
-                readonly
-              >
-            <div class="row">
-              <div class="col-12 text-center">
-           <!-- kolom 1 -->
-              </div>
-            </div>
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('3')">
-                Salin Text
-              </button>
-            </div>
-          </div>
-          <div class="mt-4">
-            <h5>3. Lanjut kita buat judul dan deskripsinya</h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-4"
-                rows="12"
-                class="form-control"
-                readonly
-              >
-            <div class="judul">
-              <h3 id="biodata">Biodata</h3>
-            </div>
-            <div class="judul-deskripsi">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus <br />
-                impedit incidunt eius, dolor ea veritatis!
-              </p>
-            </div>
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('4')">
-                Salin Text
-              </button>
-            </div>
-          </div>
-          <div class="mt-4">
-            <h5>Ini style css dari membuat judul dan deskripsinya</h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-5"
-                rows="12"
-                class="form-control"
-                readonly
-              >
-            .judul h3{
-              color: #00a2f7;
-              font-weight: 500;
-            }
-            .judul-deskripsi p{
-              color: white;
-              font-size: 13px;
-              padding-bottom: 5rem;
-            }
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('5')">
-                Salin Text
-              </button>
-            </div>
-          </div>
-          <div class="mt-4">
-            <h5>
-              4. Langkah selanjutnya kita buat 1 baris yang barisnya mempunyai 2
-              kolom, kolom pertama berisi gambar kolom kedua berisi isi biodata
-            </h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-6"
-                rows="12"
-                class="form-control"
-                readonly
-              >
-            <div class="row">
-              <div class="col-lg-6">
-                <!-- kolom 1 -->
-              </div>
-              <div class="col-lg-6">
-               <!-- kolom 2 -->
-              </div>
-            </div>
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('6')">
-                Salin Text
-              </button>
-            </div>
-          </div>
-          <div class="mt-4">
-            <h5>
-              5. Langkah selanjutnya kita buat isi dari kolom pertama yaitu
-              berisi gambar, kita copy dan dimasukkan ke kolom pertama
-            </h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-7"
-                rows="12"
-                class="form-control"
-                readonly
-              >
-            
-            <div>
-              <img src="./assets/aku4.png" class="img-fluid" alt="" />
-            </div>
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('7')">
-                Salin Text
-              </button>
-            </div>
-          </div>
-          <div class="mt-4">
-            <h5>
-              6. lanjut kita buat isi di kolom kedua yang berisi biodata kita,
-              copy dan salin ke kolom kedua
-            </h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-8"
-                rows="12"
-                class="form-control"
-                readonly
-              >
-            <div>
-              <h4 style="color: white; padding-bottom: 1.5rem">My Bio</h4>
-            </div>
-            <div>
-              <p style="color: white; padding-bottom: 1rem; font-weight: 300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, aliquid praesentium consectetur sequi, molestias
-                quibusdam fugiat ea repudiandae eveniet, voluptatibus dolorum!
-                Non animi quo velit?
-              </p>
-            </div>
-            <div class="pembungkus-tabel">
-              <div class="tabel">
-                <div>
-                  <h5>Name</h5>
-                  <p>Davano Alif R</p>
-                </div>
-                <div>
-                  <h5>Email</h5>
-                  <p>Davano@gmail.com</p>
-                </div>
-                <div>
-                  <h5>Nomor</h5>
-                  <p>089-616-915-841</p>
-                </div>
-              </div>
-              <div class="tabel">
-                <div>
-                  <h5>Status</h5>
-                  <p>Mahasiswa</p>
-                </div>
-                <div>
-                  <h5>Jenis kelamin</h5>
-                  <p>Laki - Laki</p>
-                </div>
-                <div>
-                  <h5>Umur</h5>
-                  <p>19 Tahun</p>
-                </div>
-              </div>
-            </div>
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('8')">
-                Salin Text
-              </button>
-            </div>
-          </div>
-          <div class="mt-4">
-            <h5>Ini style css dari isi kolom kedua</h5>
-
-            <div class="d-flex flex-column">
-              <textarea
-                id="html-code-9"
-                rows="12"
-                class="form-control"
-                readonly
-              >
-            .pembungkus-tabel{
-              display: flex;
-              align-items: center;
-              padding: 2rem ;
-              border: 1px solid #00a2f7;
-              justify-content: space-around;
-              border-radius: 5px;
-              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-              transition: .2s ease-in-out;
-              cursor: pointer;
-            }
-            .pembungkus-tabel:hover{
-              background-color: #0c2f4b;
-              transform: scale(1.1);
-            }
-            /* tabel 1 */
-            .tabel h5{
-              color: white;
-            }
-            .tabel p{
-              color: #6584c9;
-            }
-          </textarea
-              >
-              <button class="btn btn-primary mt-3" onclick="copyText('9')">
-                Salin Text
-              </button>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -372,7 +64,7 @@
   <img src="./img/about.png" class="img-fluid" alt="Gallery Image" style="max-width: 100%;">
 
   <div class="mt-4">
-    <h5>1. Setelah membuat about kita lanjut membuat biodata pertama-tama kita buat container buat judul dan isi dari biodatanya </h5>
+    <h5>1. Setelah membuat nav dan hero kita lanjut membuat biodata pertama-tama kita buat container buat judul dan isi dari biodatanya </h5>
 
     <div class="d-flex flex-column">
       <textarea id="html-code-1" rows="12" class="form-control" readonly>
@@ -401,7 +93,7 @@
     </div>
   </div>
   <div class="mt-4">
-    <h5>2. langkah ke dua kita buat 1 baris 1 kolom untuk membungkus Judul dan deskripsinya</h5>
+    <h5>2. langkah ke dua kita buat 1 baris 1 kolom untuk membungkus Judul dan deskripsinya,paste masukkan ke container</h5>
 
     <div class="d-flex flex-column">
       <textarea id="html-code-3" rows="12" class="form-control" readonly>
@@ -415,7 +107,7 @@
     </div>
   </div>
   <div class="mt-4">
-    <h5>3. Lanjut kita buat judul dan deskripsinya</h5>
+    <h5>3. Lanjut kita buat judul dan deskripsinya,paste masukkan ke kolom pertama</h5>
 
     <div class="d-flex flex-column">
       <textarea id="html-code-4" rows="12" class="form-control" readonly>
