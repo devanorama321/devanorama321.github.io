@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Header</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main
+      style="height: 100vh"
+      class="d-flex justify-content-between flex-column"
+    >
+      <div>
+        <!-- header -->
+        <nav class="navbar container navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">MODUL WEB 2</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    ><b>Header</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="video.html">Video</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="pdf.html">PDF</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="footer.html">Footer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="https://l1nk.dev/3LPkm"
+                    >Asset</a
+                  >
+                </li>
+              </ul>
+
+    <!--  -->
+    <div class="container mt-5">
+      <h4 class="mb-4">Membuat Nav & Header</h4>
+      <img
+        src="./img/gambar1.png"
+        class="img-fluid"
+        alt="Gallery Image"
+        style="max-width: 100%"
+      />
+
+      <div class="mt-4">
+        <h5>
+          1. Untuk memulai membuat website, seperti biasa kita butuh struktur
+          HTML. Agar HTML kita terintegrasi dengan
+          <a href="https://getbootstrap.com/">bootstrap</a> kita bisa tambahkan
+          link cdn dan css bootstrap
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
+           <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Code injected by live-server -->
+    <script></script>
+  </body>
+</html>
+
+          </textarea>
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          2. Lalu kita akan berintegrasi juga dengan
+          <a href="https://cdnjs.com/libraries/font-awesome"> Font Awesome</a>
+          biar mempermudah kita mengambil beberapa icon di dalamnya, masukan
+          link cdn ini terlebih dahulu masukkan ke "head" pada html
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
+          
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          </textarea>
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          3. kita buat dulu container untuk membungkus nav dan isi hero nya
+          nanti
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
+          
+            <div class="header">
+   <!-- header -->
+            </div>
+          </textarea>
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          Lanjut kita kasih style css buat container pembungkus nav dan isi hero
+          di atas
+        </h5>
+
+        <!--  -->
+        <div class="container mt-5">
+          <h4 class="mb-4">Membuat Header</h4>
+          <img
+            src="./img/gambar1.png"
+            class="img-fluid"
+            alt="Gallery Image"
+            style="max-width: 100%"
+          />
+
+          <div class="mt-4">
+            <h5>
+              1. Untuk memulai membuat website, seperti biasa kita butuh
+              struktur HTML. Agar HTML kita terintegrasi dengan bootstrap kita
+              bisa tambahkan link cdn dan css bootstrap
+            </h5>
+
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-1"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+               <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+        />
+      </head>
+      <body>
+        <h1>Hello, world!</h1>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Code injected by live-server -->
+        <script></script>
+      </body>
+    </html>
+    
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('1')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>
+              2. Lalu kita akan berintegrasi juga dengan web font-awesome biar
+              mempermudah kita mengambil beberapa icon di dalamnya, masukan link
+              cdn ini terlebih dahulu masukkan ke head pada html
+            </h5>
+
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-2"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+              
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('2')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>
+              3. kita buat dulu container untuk membungkus nav dan isi headernya
+              nanti
+            </h5>
+
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-3"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+              
+                <div class="header">
+       <!-- header -->
+                </div>
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('3')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>
+              Lanjut kita kasih style css buat container pembungkus nav dan isi
+              header di atas
+            </h5>
+
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-4"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+              
+                .header{
+                  width: 100%;
+                  height: auto;
+                  background-color: #0f172a;
+                  padding-bottom: 1rem;
+                 
+              }
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('4')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>
+              4.Lanjut setelah sudah terhubung dengan bootstrap kita manfaatkan
+              Elemen navbar dari bootstrap itu sendiri contoh seperti dibawah
+              ini
+            </h5>
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-5"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+                <nav class="navbar navbar-expand-lg bg-trasnparant">
+                  <div class="container-fluid wrap_navbar pt-3">
+                    <a class="navbar-brand" href="#"><h4>DavanoPorto</h4></a>
+                    <button
+                      style="border: none; color: rgba(0, 12, 12, 0)"
+                      class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarNavAltMarkup"
+                      aria-controls="navbarNavAltMarkup"
+                      aria-expanded="false"
+                      aria-label="navigation"
+                    >
+                      <span class=""
+                        ><p style="color: white"><i class="fa-solid fa-bars"></i></p
+                      ></span>
+                    </button>
+                    <div
+                      class="collapse navbar-collapse"
+                      style="justify-content: end"
+                      id="navbarNavAltMarkup"
+                    >
+                      <div class="navbar-nav" id="aboutme">
+                        <a class="nav-link" href="#aboutme">About Me</a>
+                        <a class="nav-link" href="#biodata">Biodata</a>
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link" href="#video">Video</a>
+                        <a class="nav-link" href="#upload">View pdf</a>
+                        <a class="nav-link" href="#upload">Footer</a>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('5')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>
+              kita kasih style css nav dari bootstrapnya biar lebih bagus dan
+              menarik
+            </h5>
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-6"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+                .navbar-brand h4{
+                  color: #00a2f7;
+                }
+                .navbar-nav a{
+                  font-weight: 600;
+                  color: white;
+                  transition: .2s ease-in-out;
+                  margin-right: 2.5rem;
+                }
+                .navbar-nav a:hover{
+                  color: #00a2f7;
+                }
+                .navbar-nav{
+                  padding-right: 5rem;
+                }
+                .wrap_navbar{
+                  position: fixed;
+                  right: 0;
+                  top: 0;
+                  left: 0;
+                background-color: #0f172a;
+                
+                z-index: 99999;
+                
+                 border-bottom: 1px solid #00a1f756;
+                
+                }
+                .navbar-brand{
+                  padding-left: 3rem;
+                }
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('6')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>
+              5.Lanjut kita membuat 1 baris 2 kolom untuk gambar user dan isi
+              headernya, kita copy lalu masukan ke container header
+            </h5>
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-7"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+                <div class="container">
+                  <div class="row pembungkus">
+                    <div class="col-lg-6 section">
+                     <!-- kolom 1 -->
+                    </div>
+                    <div class="col-lg-6">
+                     <!-- kolom 2 -->
+                    </div>
+                  </div>
+                </div>
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('7')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>kita kasih style css class pembungkus dan section</h5>
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-8"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+                .pembungkus{
+                  padding-top: 4rem;
+                  display: flex;
+                  align-items: center;
+              }
+              .section{
+                padding-bottom: 3rem;
+            }
+<<<<<<< HEAD
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('8')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>
+              6. Lanjut kita buat isi kolom pertama, kita copy masukan ke
+              pembungkus di atas
+            </h5>
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-9"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+                <div class="nama">
+                  <h1>Hi,I'm Davano Alif R</h1>
+=======
+            .navbar-nav a{
+              font-weight: 600;
+              color: white;
+              transition: .2s ease-in-out;
+              margin-right: 2.5rem;
+            }
+            .navbar-nav a:hover{
+              color: #00a2f7;
+            }
+            .navbar-nav{
+              padding-right: 5rem;
+            }
+            .wrap_navbar{
+              position: fixed;
+              right: 0;
+              top: 0;
+              left: 0;
+            background-color: #0f172a;
+            
+            z-index: 99999;
+            
+             border-bottom: 1px solid #00a1f756;
+            
+            }
+            .navbar-brand{
+              padding-left: 3rem;
+            }
+          </textarea>
+          <button class="btn btn-primary mt-3" onclick="copyText('6')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          5.Lanjut kita membuat 1 baris 2 kolom untuk gambar user dan isi hero
+          nya, kita copy lalu masukan ke container header
+        </h5>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-7" rows="12" class="form-control" readonly>
+            <div class="container">
+              <div class="row pembungkus">
+                <div class="col-lg-6 section">
+                 <!-- kolom 1 -->
+>>>>>>> 48a387da9b75a73606378cffa21f7a7cfee9bc7b
+                </div>
+                <div class="asal">
+                  <h3>Front End Developer</h3>
+                </div>
+                <div class="deskripsi">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+                    dolores in! Quibusdam, necessitatibus possimus odio eaque
+                    dolorum odit laudantium dolores. Lorem ipsum dolor, sit
+                  </p>
+                </div>
+                <div style="padding-bottom: 4rem">
+                  <div class="tombol">
+                    <a href="https://wa.me/089616915841?texthai">Hubungi Saya</a>
+                  </div>
+                </div>
+                <div class="pembungkus-tombol">
+                  <div class="tombol-sosmed">
+                    <a href="https://www.instagram.com/davano17/?hl=en"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </div>
+                  <div class="tombol-sosmed">
+                    <a
+                      href="https://www.youtube.com/channel/UC-Qx63eA1jR-gUGICDHzk0A"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </div>
+                  <div class="tombol-sosmed">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  </div>
+                </div>
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('9')">
+                Salin Text
+              </button>
+            </div>
+<<<<<<< HEAD
+          </div>
+          <div class="mt-4">
+            <h5>kita kasih style css isi dari header nya</h5>
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-10"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+                .nama h1{
+                  color: white;
+                  font-size: 3.2rem;
+                  font-weight: 600;
+              }
+              .asal h3{
+=======
+          </textarea>
+          <button class="btn btn-primary mt-3" onclick="copyText('7')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>kita kasih style css class pembungkus dan section</h5>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-8" rows="12" class="form-control" readonly>
+            .pembungkus{
+              padding-top: 4rem;
+              display: flex;
+              align-items: center;
+          }
+          .section{
+            padding-bottom: 3rem;
+        }
+          </textarea>
+          <button class="btn btn-primary mt-3" onclick="copyText('8')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          6. Lanjut kita buat isi kolom pertama, kita copy masukan ke kolom
+          pertama
+        </h5>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-9" rows="12" class="form-control" readonly>
+            <div class="nama">
+              <h1>Hi,I'm Davano Alif R</h1>
+            </div>
+            <div class="asal">
+              <h3>Front End Developer</h3>
+            </div>
+            <div class="deskripsi">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+                dolores in! Quibusdam, necessitatibus possimus odio eaque
+                dolorum odit laudantium dolores. Lorem ipsum dolor, sit
+              </p>
+            </div>
+            <div style="padding-bottom: 4rem">
+              <div class="tombol">
+                <a href="https://wa.me/089616915841?texthai">Hubungi Saya</a>
+              </div>
+            </div>
+            <div class="pembungkus-tombol">
+              <div class="tombol-sosmed">
+                <a href="https://www.instagram.com/davano17/?hl=en"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+              <div class="tombol-sosmed">
+                <a
+                  href="https://www.youtube.com/channel/UC-Qx63eA1jR-gUGICDHzk0A"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+              <div class="tombol-sosmed">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </textarea>
+          <button class="btn btn-primary mt-3" onclick="copyText('9')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>kita kasih style css isi dari kolom pertama tersebut</h5>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-10" rows="12" class="form-control" readonly>
+            .nama h1{
+              color: white;
+              font-size: 3.2rem;
+              font-weight: 600;
+          }
+          .asal h3{
+          color: #00a2f7;
+          padding-bottom: 1rem;
+          }
+          .deskripsi p{
+              color: white;
+              font-weight: 300;
+              padding-bottom: 1.5rem;
+          }
+          .tombol a{
+              text-decoration: none;
+>>>>>>> 48a387da9b75a73606378cffa21f7a7cfee9bc7b
+              color: #00a2f7;
+              padding-bottom: 1rem;
+              }
+              .deskripsi p{
+                  color: white;
+                  font-weight: 300;
+                  padding-bottom: 1.5rem;
+              }
+              .tombol a{
+                  text-decoration: none;
+                  color: #00a2f7;
+                  padding: 10px 20px;
+                  background-color: transparent;
+                  border: 1px solid #00a2f7;
+                  font-weight: 700;
+                  transition: .2s ease-in-out;
+                  border-radius: 20px;
+                  
+              }
+              
+              .tombol a:hover {
+                  background-color: #00a2f7;
+                  color: #0f172a;
+                 
+              }
+              .tombol-sosmed a{
+                padding: 1rem 1.5rem;
+                color: #00a2f7;
+                background-color: transparent;
+                border: 1px solid #00a2f7;
+                border-radius: 50px;
+                margin-right: 1.5rem;
+                transition: .2s ease-in-out;
+                font-size: 1.5rem;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .tombol-sosmed a:hover{
+                background-color: #00a2f7;
+                color: #0f172a;
+            }
+            
+            .pembungkus-tombol{
+                display: flex;
+                align-items: center;
+            }
+            
+            
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('10')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>
+              6.lalu kita isi kolom kedua dengan foto user, copy masukkan ke
+              kolom kedua, kalau mau ambil/upload foto yang lain masuk ke nav
+              bagian asset
+            </h5>
+            <div class="d-flex flex-column">
+              <textarea
+                id="html-code-11"
+                rows="12"
+                class="form-control"
+                readonly
+              >
+                <img src="./assets/aku4.png" class="img-fluid" alt="" />
+            
+            
+              </textarea>
+              <button class="btn btn-primary mt-3" onclick="copyText('11')">
+                Salin Text
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer align-items-center text-center pb-3 mt-3"
+        style="background-color: rgb(139, 220, 255) !important"
+      >
+        <h5 class="pt-3">
+          Disusun oleh Tim Workshop SISTEM INFORMASI INSTITUT TEKNOLOGI ADHI
+          TAMA SURABAYA
+        </h5>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script/clipboard.js"></script>
+  </body>
+</html>
